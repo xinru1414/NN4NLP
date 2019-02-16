@@ -28,7 +28,6 @@ class CNNClassify(nn.Module):
                     count += 1
                     init_emb[dl.w2i[word]] = emb[w2i[word]]
             print(f'loaded {count} words from Google pte')
-            #with torch.no_grad():
             self.embed.weight.data.copy_(torch.from_numpy(init_emb))
             self.embed.weight.requires_grad = True
         # 2D and 1D are the same, either can be used in the forward pass

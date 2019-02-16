@@ -39,12 +39,12 @@ def train_and_evaluate(dl: DataLoader, model: CNNClassify):
     patience = 0
     decay = 0
     lr = config.lr
-    #accs = []
+
     optim = torch.optim.Adam(model.parameters(), lr=config.lr)
     for epoch in tqdm(range(config.max_epochs)):
         # randomly get a train_dev set from the K-fold
-        #i = randint(0, config.k - 1)
-        train, dev = dl.folds[0]
+        i = randint(0, config.k - 1)
+        train, dev = dl.folds[i]
         train_loss = 0
         dev_loss = 0
 
@@ -71,12 +71,10 @@ def train_and_evaluate(dl: DataLoader, model: CNNClassify):
         train_predictions, train_acc = make_prediction_and_acc(model,train)
         dev_predictions, dev_acc = make_prediction_and_acc(model,dev)
 
-        #accs.append(dev_acc)
 
-        print(f'Epoch {epoch}, fold 0, train loss {np.mean(train_loss)}, train accuracy {train_acc}, dev loss {dev_loss}, dev acc {dev_acc}')
 
-        # ave_acc = np.mean(accs)
-        # print(f'average acc for epoch {epoch} is {ave_acc}')
+        print(f'Epoch {epoch}, fold{i}, train loss {np.mean(train_loss)}, train accuracy {train_acc}, dev loss {dev_loss}, dev acc {dev_acc}')
+
 
         if dev_acc < prev_best:
             patience += 1
@@ -92,41 +90,28 @@ def train_and_evaluate(dl: DataLoader, model: CNNClassify):
             model.save()
 
 
-        #if decay >= 3:
-        print('evaluating model on test set and quit training')
-        model.load()
-        print('load the best model')
-        test_predictions, test_acc = make_prediction_and_acc(model, dl.test_examples)
-        print(f'test acc on dev {test_acc}')
-        if test_acc >= 0.82:
-            with open(f'{config.test_result_path}_{test_acc}.txt', 'w') as f:
-                for i in test_predictions:
-                    f.write(dl.i2l[i] + '\n')
-            print('finished writing dev')
-            test2_predictions = []
-            for b in batch(dl.test_examples2, config.batch_size):
-                b_sents = get_long_tensor(b.sents)
-                test2_predictions += model.predict(b_sents).tolist()
-            with open(f'{config.test_result_path}_{test_acc}_test2.txt', 'w') as f:
-                for i in np.array(test2_predictions):
-                    f.write(dl.i2l[i] + '\n')
-            print('finished writing test')
+        if decay >= 3:
+            print('evaluating model on test set and quit training')
+            model.load()
+            print('load the best model')
+            test_predictions, test_acc = make_prediction_and_acc(model, dl.test_examples)
+            print(f'test acc on dev {test_acc}')
+            if test_acc >= 0.82:
+                with open(f'{config.test_result_path}_{test_acc}.txt', 'w') as f:
+                    for i in test_predictions:
+                        f.write(dl.i2l[i] + '\n')
+                print('finished writing dev')
+                test2_predictions = []
+                for b in batch(dl.test_examples2, config.batch_size):
+                    b_sents = get_long_tensor(b.sents)
+                    test2_predictions += model.predict(b_sents).tolist()
+                with open(f'{config.test_result_path}_{test_acc}_test2.txt', 'w') as f:
+                    for i in np.array(test2_predictions):
+                        f.write(dl.i2l[i] + '\n')
+                print('finished writing test')
 
-
-
-# def calc_acc(model: CNNClassify, examples: Examples):
-#     '''
-#
-#     :param model: CNNClassify
-#     :param examples: Examples
-#     :return: accuracy score
-#     '''
-#     predictions = make_prediction(model, examples)
-#     acc = np.sum(examples.labels == predictions) * 1.0 / len(examples.labels)
-#     return acc
-
-# def main():
-if True:
+def main():
+#if True:
     # load data
     dl = DataLoader(config)
     # load the model
@@ -135,7 +120,7 @@ if True:
     train_and_evaluate(dl,model)
 
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
 
 
