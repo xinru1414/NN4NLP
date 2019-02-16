@@ -78,7 +78,7 @@ class DataLoader:
 
         print('reading in examples from train and k folding')
         #self.folds = [(self.train_examples, self.dev_examples)]
-        self.folds = self.k_fold(examples=self.full_training_examples, k=self.k)
+        self.folds = self.k_fold(examples=self.train_examples, k=self.k)
 
     def build_vocabs(self, *file_paths):
         words_set = set()
