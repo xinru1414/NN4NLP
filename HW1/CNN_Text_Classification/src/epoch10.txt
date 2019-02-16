@@ -1,0 +1,440 @@
+building vocabularies from all train, dev and test
+vocab size is 138380, label size is 18
+train and eval on train
+padding
+test on dev
+reading in examples from both train and dev, and k folding
+loaded 200000 vectors from Google pte
+
+train model on the train set
+valuate model on the dev set
+Epoch 0, fold 0, train loss 1801.1664857268333, train accuracy 0.6984132540981455, dev loss 144.05771428346634, dev acc 0.7842148792879367
+
+train model on the train set
+valuate model on the dev set
+Epoch 0, fold 1, train loss 1194.8711512982845, train accuracy 0.7994818788891903, dev loss 111.01091796159744, dev acc 0.8344295222716711
+
+train model on the train set
+valuate model on the dev set
+Epoch 0, fold 2, train loss 928.5938968211412, train accuracy 0.8438416229793714, dev loss 82.41664758324623, dev acc 0.8787759442322083
+
+train model on the train set
+valuate model on the dev set
+Epoch 0, fold 3, train loss 765.8725291639566, train accuracy 0.8702290410383428, dev loss 67.80645394325256, dev acc 0.9019337560552951
+
+train model on the train set
+valuate model on the dev set
+Epoch 0, fold 4, train loss 657.7932125031948, train accuracy 0.8875143314749823, dev loss 54.906968362629414, dev acc 0.9209168603048324
+
+train model on the train set
+valuate model on the dev set
+Epoch 0, fold 5, train loss 576.3550274297595, train accuracy 0.8995090102311415, dev loss 45.82353028655052, dev acc 0.9356071048796818
+
+train model on the train set
+valuate model on the dev set
+Epoch 0, fold 6, train loss 512.0424298942089, train accuracy 0.9098626804015438, dev loss 40.367145113646984, dev acc 0.9450592729707377
+
+train model on the train set
+valuate model on the dev set
+Epoch 0, fold 7, train loss 466.70873553678393, train accuracy 0.9184921975511776, dev loss 34.722546108067036, dev acc 0.9509668780276476
+
+train model on the train set
+valuate model on the dev set
+Epoch 0, fold 8, train loss 429.44453969597816, train accuracy 0.9241897793609256, dev loss 29.832551676779985, dev acc 0.9592375251073215
+
+train model on the train set
+valuate model on the dev set
+Epoch 0, fold 9, train loss 392.84253308549523, train accuracy 0.9303121403471921, dev loss 26.807863123714924, dev acc 0.965852697912564
+average acc for epoch 0 is 0.9076994441049895
+save the best model
+saving the model to ../model.pt
+
+train model on the train set
+valuate model on the dev set
+Epoch 1, fold 0, train loss 363.78576754033566, train accuracy 0.9341846156539091, dev loss 26.44349379837513, dev acc 0.964160529321413
+
+train model on the train set
+valuate model on the dev set
+Epoch 1, fold 1, train loss 340.50712725147605, train accuracy 0.9385387584347842, dev loss 24.211034908890724, dev acc 0.9671143318498681
+
+train model on the train set
+valuate model on the dev set
+Epoch 1, fold 2, train loss 322.33318488299847, train accuracy 0.9407574020427275, dev loss 21.211084650829434, dev acc 0.9718797999291088
+
+train model on the train set
+valuate model on the dev set
+Epoch 1, fold 3, train loss 311.055472034961, train accuracy 0.9445689179845789, dev loss 20.229063365608454, dev acc 0.9735339293450436
+
+train model on the train set
+valuate model on the dev set
+Epoch 1, fold 4, train loss 297.5044542849064, train accuracy 0.9476758942402786, dev loss 18.400606932118535, dev acc 0.9783781654917096
+
+train model on the train set
+valuate model on the dev set
+Epoch 1, fold 5, train loss 284.1928084641695, train accuracy 0.9485335947277677, dev loss 17.212427774444222, dev acc 0.9795596865030917
+
+train model on the train set
+valuate model on the dev set
+Epoch 1, fold 6, train loss 271.8809034489095, train accuracy 0.9513823856326417, dev loss 15.837950509041548, dev acc 0.9811744318853137
+
+train model on the train set
+valuate model on the dev set
+Epoch 1, fold 7, train loss 264.0305802617222, train accuracy 0.9521000533874793, dev loss 14.224405804648995, dev acc 0.982159032728132
+
+train model on the train set
+valuate model on the dev set
+Epoch 1, fold 8, train loss 252.36755361780524, train accuracy 0.954397465407539, dev loss 13.471760398009792, dev acc 0.9845614587846088
+
+train model on the train set
+valuate model on the dev set
+Epoch 1, fold 9, train loss 240.97377137839794, train accuracy 0.9552728657135731, dev loss 12.124155627563596, dev acc 0.985978731784167
+average acc for epoch 1 is 0.9422747269336176
+save the best model
+saving the model to ../model.pt
+
+train model on the train set
+valuate model on the dev set
+Epoch 2, fold 0, train loss 237.47128990571946, train accuracy 0.9568086540228778, dev loss 12.779818706214428, dev acc 0.9838131621440668
+
+train model on the train set
+valuate model on the dev set
+Epoch 2, fold 1, train loss 225.5353478975594, train accuracy 0.9587778643257862, dev loss 12.82255213521421, dev acc 0.9846008428183215
+
+train model on the train set
+valuate model on the dev set
+Epoch 2, fold 2, train loss 224.98078820109367, train accuracy 0.9597887256146124, dev loss 11.641162406653166, dev acc 0.9865700445039581
+
+train model on the train set
+valuate model on the dev set
+Epoch 2, fold 3, train loss 218.67428592033684, train accuracy 0.9607733307660665, dev loss 10.669954444281757, dev acc 0.9881454058524675
+
+train model on the train set
+valuate model on the dev set
+Epoch 2, fold 4, train loss 216.89590631052852, train accuracy 0.9610752763458459, dev loss 10.204770309850574, dev acc 0.9892875428301366
+
+train model on the train set
+valuate model on the dev set
+Epoch 2, fold 5, train loss 210.84698729589581, train accuracy 0.9621211458178349, dev loss 10.221820380538702, dev acc 0.988657398290733
+
+train model on the train set
+valuate model on the dev set
+Epoch 2, fold 6, train loss 205.41791854053736, train accuracy 0.9633726883659055, dev loss 9.463690403848886, dev acc 0.9897601512346894
+
+train model on the train set
+valuate model on the dev set
+Epoch 2, fold 7, train loss 203.68224962241948, train accuracy 0.9638409228157082, dev loss 9.040233537554741, dev acc 0.989681383167264
+
+train model on the train set
+valuate model on the dev set
+Epoch 2, fold 8, train loss 202.0162703189999, train accuracy 0.965057457180616, dev loss 8.406029130332172, dev acc 0.9911779764483478
+
+train model on the train set
+valuate model on the dev set
+Epoch 2, fold 9, train loss 193.68836496770382, train accuracy 0.9655039624713919, dev loss 8.014637246727943, dev acc 0.9919259551004332
+average acc for epoch 2 is 0.9576371467020924
+save the best model
+saving the model to ../model.pt
+
+train model on the train set
+valuate model on the dev set
+Epoch 3, fold 0, train loss 191.6786259636283, train accuracy 0.9664490324613378, dev loss 8.512736234813929, dev acc 0.9910992083809224
+
+train model on the train set
+valuate model on the dev set
+Epoch 3, fold 1, train loss 186.25039748847485, train accuracy 0.9664709125758146, dev loss 8.589023818261921, dev acc 0.9916112008191879
+
+train model on the train set
+valuate model on the dev set
+Epoch 3, fold 2, train loss 187.92073959112167, train accuracy 0.9674117574983152, dev loss 7.7782474141567945, dev acc 0.9919262730888898
+
+train model on the train set
+valuate model on the dev set
+Epoch 3, fold 3, train loss 185.7696944680065, train accuracy 0.9679981445662924, dev loss 7.745960665110033, dev acc 0.9921625772911662
+
+train model on the train set
+valuate model on the dev set
+Epoch 3, fold 4, train loss 180.44611351005733, train accuracy 0.9688033327790371, dev loss 7.113760858774185, dev acc 0.9924382655271553
+
+train model on the train set
+valuate model on the dev set
+Epoch 3, fold 5, train loss 179.71435363218188, train accuracy 0.9690702701756536, dev loss 6.993752758949995, dev acc 0.992477649560868
+
+train model on the train set
+valuate model on the dev set
+Epoch 3, fold 6, train loss 176.8861180972308, train accuracy 0.968763948572979, dev loss 7.190413191914558, dev acc 0.9925958016620062
+
+train model on the train set
+valuate model on the dev set
+Epoch 3, fold 7, train loss 174.31360382027924, train accuracy 0.9696960414496889, dev loss 6.577248344197869, dev acc 0.9932259462014099
+
+train model on the train set
+valuate model on the dev set
+Epoch 3, fold 8, train loss 176.3654731735587, train accuracy 0.9697047934954796, dev loss 6.410176668112399, dev acc 0.9936591705722501
+
+train model on the train set
+valuate model on the dev set
+Epoch 3, fold 9, train loss 172.24271100573242, train accuracy 0.970566998805351, dev loss 6.153246972709894, dev acc 0.9941315478534857
+average acc for epoch 3 is 0.9663610510505027
+save the best model
+saving the model to ../model.pt
+
+train model on the train set
+valuate model on the dev set
+Epoch 4, fold 0, train loss 167.93309572711587, train accuracy 0.9704749735250615, dev loss 6.174426950514317, dev acc 0.9939348588082392
+
+train model on the train set
+valuate model on the dev set
+Epoch 4, fold 1, train loss 165.85434969887137, train accuracy 0.9713501781041318, dev loss 6.302377453073859, dev acc 0.9940136268756646
+
+train model on the train set
+valuate model on the dev set
+Epoch 4, fold 2, train loss 166.81708196364343, train accuracy 0.9709519600206549, dev loss 5.919100198894739, dev acc 0.9940923949430901
+
+train model on the train set
+valuate model on the dev set
+Epoch 4, fold 3, train loss 163.5697258990258, train accuracy 0.9722603908663651, dev loss 5.803574559336994, dev acc 0.994249931077941
+
+train model on the train set
+valuate model on the dev set
+Epoch 4, fold 4, train loss 163.88463030196726, train accuracy 0.9723304072326906, dev loss 5.502318111248314, dev acc 0.9949982277184829
+
+train model on the train set
+valuate model on the dev set
+Epoch 4, fold 5, train loss 161.34734250232577, train accuracy 0.9726673609956328, dev loss 5.617158429697156, dev acc 0.9944074672127919
+
+train model on the train set
+valuate model on the dev set
+Epoch 4, fold 6, train loss 163.62996873818338, train accuracy 0.9727023691787955, dev loss 5.534476552158594, dev acc 0.9943286991453665
+
+train model on the train set
+valuate model on the dev set
+Epoch 4, fold 7, train loss 161.63152439007536, train accuracy 0.9724485598508651, dev loss 5.386294054565951, dev acc 0.9944074672127919
+
+train model on the train set
+valuate model on the dev set
+Epoch 4, fold 8, train loss 160.23072557523847, train accuracy 0.9732231159033424, dev loss 4.863964713198584, dev acc 0.995273915954472
+
+train model on the train set
+valuate model on the dev set
+Epoch 4, fold 9, train loss 162.4259811602533, train accuracy 0.972803136719485, dev loss 4.716632196679711, dev acc 0.9955494289090193
+average acc for epoch 4 is 0.9719939611975594
+save the best model
+saving the model to ../model.pt
+
+train model on the train set
+valuate model on the dev set
+Epoch 5, fold 0, train loss 154.0659850127995, train accuracy 0.9736257100097148, dev loss 5.020746914669871, dev acc 0.9958646764601631
+
+train model on the train set
+valuate model on the dev set
+Epoch 5, fold 1, train loss 156.69374368805438, train accuracy 0.9742646093524361, dev loss 5.070980346761644, dev acc 0.9960615966287267
+
+train model on the train set
+valuate model on the dev set
+Epoch 5, fold 2, train loss 156.69647017680109, train accuracy 0.9741945929861106, dev loss 4.827785173431039, dev acc 0.9958252924264503
+
+train model on the train set
+valuate model on the dev set
+Epoch 5, fold 3, train loss 154.7218134533614, train accuracy 0.9742952415127036, dev loss 4.588702000837657, dev acc 0.9952345319207593
+
+train model on the train set
+valuate model on the dev set
+Epoch 5, fold 4, train loss 154.39026111736894, train accuracy 0.9745796830009015, dev loss 4.454173447564244, dev acc 0.9955496041904612
+
+train model on the train set
+valuate model on the dev set
+Epoch 5, fold 5, train loss 150.0633996538818, train accuracy 0.9750479174507041, dev loss 4.722794815897942, dev acc 0.9955496041904612
+
+train model on the train set
+valuate model on the dev set
+Epoch 5, fold 6, train loss 155.37096256390214, train accuracy 0.9744090181079827, dev loss 4.644763025455177, dev acc 0.9957071403253122
+
+train model on the train set
+valuate model on the dev set
+Epoch 5, fold 7, train loss 151.68436939269304, train accuracy 0.9751967022291461, dev loss 4.502237733453512, dev acc 0.9959434445275885
+
+train model on the train set
+valuate model on the dev set
+Epoch 5, fold 8, train loss 154.20880650356412, train accuracy 0.97518357416046, dev loss 4.294834188112873, dev acc 0.9958252924264503
+
+train model on the train set
+valuate model on the dev set
+Epoch 5, fold 9, train loss 154.10217485856265, train accuracy 0.9750086426073981, dev loss 4.178292781114578, dev acc 0.9968885387948011
+average acc for epoch 5 is 0.9759691296961525
+save the best model
+saving the model to ../model.pt
+
+train model on the train set
+valuate model on the dev set
+Epoch 6, fold 0, train loss 150.74149532523006, train accuracy 0.9753936232594369, dev loss 4.398154105991125, dev acc 0.9959040604938758
+
+train model on the train set
+valuate model on the dev set
+Epoch 6, fold 1, train loss 149.26919111981988, train accuracy 0.975730577022379, dev loss 4.417652334552258, dev acc 0.996022212595014
+
+train model on the train set
+valuate model on the dev set
+Epoch 6, fold 2, train loss 149.54202020540833, train accuracy 0.9759231220297745, dev loss 4.096630645915866, dev acc 0.9958646764601631
+
+train model on the train set
+valuate model on the dev set
+Epoch 6, fold 3, train loss 148.2858241610229, train accuracy 0.9761462991974375, dev loss 3.8747144195222063, dev acc 0.9959434445275885
+
+train model on the train set
+valuate model on the dev set
+Epoch 6, fold 4, train loss 150.1450261361897, train accuracy 0.9764745009145888, dev loss 3.880218400619924, dev acc 0.9966917411681304
+
+train model on the train set
+valuate model on the dev set
+Epoch 6, fold 5, train loss 148.85891925916076, train accuracy 0.9764307406856353, dev loss 4.208509874530137, dev acc 0.9957465243590249
+
+train model on the train set
+valuate model on the dev set
+Epoch 6, fold 6, train loss 145.2651041764766, train accuracy 0.9767545663798913, dev loss 4.107871823012829, dev acc 0.9965342050332795
+
+train model on the train set
+valuate model on the dev set
+Epoch 6, fold 7, train loss 151.83233735524118, train accuracy 0.9765926535327633, dev loss 3.7288645354565233, dev acc 0.997046197471545
+
+train model on the train set
+valuate model on the dev set
+Epoch 6, fold 8, train loss 153.2794404346496, train accuracy 0.9765707734182866, dev loss 3.847904127131187, dev acc 0.9958646764601631
+
+train model on the train set
+valuate model on the dev set
+Epoch 6, fold 9, train loss 146.3673230689019, train accuracy 0.9770259803342392, dev loss 3.472115397453308, dev acc 0.9967703820401733
+average acc for epoch 6 is 0.9788647986054014
+save the best model
+saving the model to ../model.pt
+
+train model on the train set
+valuate model on the dev set
+Epoch 7, fold 0, train loss 141.96932850964367, train accuracy 0.9771265283259962, dev loss 3.760186198167503, dev acc 0.9964160529321413
+
+train model on the train set
+valuate model on the dev set
+Epoch 7, fold 1, train loss 148.0334067326039, train accuracy 0.9774459779973569, dev loss 4.0597892152145505, dev acc 0.9961403646961522
+
+train model on the train set
+valuate model on the dev set
+Epoch 7, fold 2, train loss 149.0404028519988, train accuracy 0.9768902230896472, dev loss 3.55410601105541, dev acc 0.9959040604938758
+
+train model on the train set
+valuate model on the dev set
+Epoch 7, fold 3, train loss 146.8448416981846, train accuracy 0.9774022177684034, dev loss 3.4635899625918682, dev acc 0.9970068134378323
+
+train model on the train set
+valuate model on the dev set
+Epoch 7, fold 4, train loss 147.4092911761254, train accuracy 0.9773934657226127, dev loss 3.364117468474433, dev acc 0.9968886613366941
+
+train model on the train set
+valuate model on the dev set
+Epoch 7, fold 5, train loss 143.69451267272234, train accuracy 0.9780061089279619, dev loss 3.4512713060248643, dev acc 0.997046197471545
+
+train model on the train set
+valuate model on the dev set
+Epoch 7, fold 6, train loss 143.2454045880586, train accuracy 0.9778617001724152, dev loss 3.8245952865108848, dev acc 0.9965342050332795
+
+train model on the train set
+valuate model on the dev set
+Epoch 7, fold 7, train loss 142.26563374622492, train accuracy 0.9779404685845317, dev loss 3.5417131762951612, dev acc 0.9962979008310031
+
+train model on the train set
+valuate model on the dev set
+Epoch 7, fold 8, train loss 142.81357388477772, train accuracy 0.9779842288134851, dev loss 3.581067459340744, dev acc 0.9968098932692686
+
+train model on the train set
+valuate model on the dev set
+Epoch 7, fold 9, train loss 145.12526227766648, train accuracy 0.9774329486826041, dev loss 2.9862252343446016, dev acc 0.9974793225679401
+average acc for epoch 7 is 0.9810882421805978
+save the best model
+saving the model to ../model.pt
+
+train model on the train set
+valuate model on the dev set
+Epoch 8, fold 0, train loss 137.4893950305268, train accuracy 0.9782642942787877, dev loss 3.1615441916510463, dev acc 0.9972037336063959
+
+train model on the train set
+valuate model on the dev set
+Epoch 8, fold 1, train loss 139.3456178829074, train accuracy 0.9778879563097874, dev loss 3.3805337413214147, dev acc 0.9973218857075342
+
+train model on the train set
+valuate model on the dev set
+Epoch 8, fold 2, train loss 141.92999555170536, train accuracy 0.9780673732484968, dev loss 3.2086626067757607, dev acc 0.9969674294041195
+
+train model on the train set
+valuate model on the dev set
+Epoch 8, fold 3, train loss 141.69526125118136, train accuracy 0.9780148609737526, dev loss 3.136567359790206, dev acc 0.9969674294041195
+
+train model on the train set
+valuate model on the dev set
+Epoch 8, fold 4, train loss 142.51403564587235, train accuracy 0.9781417656377178, dev loss 2.9852458690293133, dev acc 0.9972825016738215
+
+train model on the train set
+valuate model on the dev set
+Epoch 8, fold 5, train loss 144.67718986421824, train accuracy 0.9788944415757184, dev loss 3.147709901910275, dev acc 0.996612973100705
+
+train model on the train set
+valuate model on the dev set
+Epoch 8, fold 6, train loss 139.3445459920913, train accuracy 0.9790300982854743, dev loss 3.2638303246349096, dev acc 0.9965735890669922
+
+train model on the train set
+valuate model on the dev set
+Epoch 8, fold 7, train loss 146.7261761482805, train accuracy 0.9787675369117531, dev loss 3.3072115808026865, dev acc 0.9973218857075342
+
+train model on the train set
+valuate model on the dev set
+Epoch 8, fold 8, train loss 136.50640758126974, train accuracy 0.978903193621509, dev loss 3.210789313757914, dev acc 0.9971643495726832
+
+train model on the train set
+valuate model on the dev set
+Epoch 8, fold 9, train loss 139.78866680525243, train accuracy 0.9785575816452899, dev loss 2.9338728468865156, dev acc 0.9975187081528161
+average acc for epoch 8 is 0.9828665984427172
+save the best model
+saving the model to ../model.pt
+
+train model on the train set
+valuate model on the dev set
+Epoch 9, fold 0, train loss 139.25348806381226, train accuracy 0.9796821256968816, dev loss 3.1979964720085263, dev acc 0.9974400378086724
+
+train model on the train set
+valuate model on the dev set
+Epoch 9, fold 1, train loss 142.50708926469088, train accuracy 0.9790169702167881, dev loss 3.1700773742049932, dev acc 0.9970068134378323
+
+train model on the train set
+valuate model on the dev set
+Epoch 9, fold 2, train loss 139.2289832038805, train accuracy 0.9793014117049861, dev loss 3.137371917255223, dev acc 0.9968098932692686
+
+train model on the train set
+valuate model on the dev set
+Epoch 9, fold 3, train loss 138.15164867004205, train accuracy 0.9794326923918466, dev loss 2.7226462213998275, dev acc 0.9975581899098106
+
+train model on the train set
+valuate model on the dev set
+Epoch 9, fold 4, train loss 140.89601607061923, train accuracy 0.9793101637507767, dev loss 2.741257975110784, dev acc 0.9974006537749597
+
+train model on the train set
+valuate model on the dev set
+Epoch 9, fold 5, train loss 138.5017071319744, train accuracy 0.9788856895299276, dev loss 3.030600508209318, dev acc 0.9971643495726832
+
+train model on the train set
+valuate model on the dev set
+Epoch 9, fold 6, train loss 142.8448964804411, train accuracy 0.9795595970558117, dev loss 3.0198275186121464, dev acc 0.9971249655389705
+
+train model on the train set
+valuate model on the dev set
+Epoch 9, fold 7, train loss 138.9358245705953, train accuracy 0.9795683491016025, dev loss 2.8082921132445335, dev acc 0.9975581899098106
+
+train model on the train set
+valuate model on the dev set
+Epoch 9, fold 8, train loss 143.70580164063722, train accuracy 0.9794720765979048, dev loss 2.78790344331572, dev acc 0.9975975739435233
+
+train model on the train set
+valuate model on the dev set
+Epoch 9, fold 9, train loss 139.8541543968022, train accuracy 0.9794896704431579, dev loss 2.46125434525311, dev acc 0.9978731784166995
+average acc for epoch 9 is 0.9843152770542679
+save the best model
+saving the model to ../model.pt
+evaluating model on test set and quit training
+loading the best model from ../model.pt
+test acc on dev 0.713841368584759
