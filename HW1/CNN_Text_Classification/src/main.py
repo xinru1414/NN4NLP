@@ -70,9 +70,6 @@ def train_and_evaluate(dl: DataLoader, model: CNNClassify):
         # calculating train acc and dev acc
         train_predictions, train_acc = make_prediction_and_acc(model,train)
         dev_predictions, dev_acc = make_prediction_and_acc(model,dev)
-
-
-
         print(f'Epoch {epoch}, fold{i}, train loss {np.mean(train_loss)}, train accuracy {train_acc}, dev loss {dev_loss}, dev acc {dev_acc}')
 
 
@@ -91,24 +88,14 @@ def train_and_evaluate(dl: DataLoader, model: CNNClassify):
 
 
         if decay >= 3:
-            print('evaluating model on test set and quit training')
+            print('evaluating model on test set')
             model.load()
             print('load the best model')
             test_predictions, test_acc = make_prediction_and_acc(model, dl.test_examples)
             print(f'test acc on dev {test_acc}')
-            if test_acc >= 0.82:
-                with open(f'{config.test_result_path}_{test_acc}.txt', 'w') as f:
-                    for i in test_predictions:
-                        f.write(dl.i2l[i] + '\n')
-                print('finished writing dev')
-                test2_predictions = []
-                for b in batch(dl.test_examples2, config.batch_size):
-                    b_sents = get_long_tensor(b.sents)
-                    test2_predictions += model.predict(b_sents).tolist()
-                with open(f'{config.test_result_path}_{test_acc}_test2.txt', 'w') as f:
-                    for i in np.array(test2_predictions):
-                        f.write(dl.i2l[i] + '\n')
-                print('finished writing test')
+            with open(f'{config.test_result_path}_{test_acc}.txt', 'w') as f:
+                for i in test_predictions:
+                    f.write(dl.i2l[i] + '\n')
 
 def main():
 #if True:
